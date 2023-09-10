@@ -16,7 +16,7 @@ public class Task2_lesson2 {
 
         String myString4 = "-78945627";
         Float myParsedFloat = Float.parseFloat(myString4);
-        System.out.println(myParsedShort);
+        System.out.println(myParsedFloat);
 
         String myString5 = "-8965.876655";
         Double myParsedDouble = Double.parseDouble(myString5);
