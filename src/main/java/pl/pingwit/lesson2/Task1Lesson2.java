@@ -1,8 +1,6 @@
-package pl.pingwit.Lesson_2;
+package pl.pingwit.lesson2;
 
-import java.sql.SQLOutput;
-
-public class Task1_lesson2 {
+public class Task1Lesson2 {
     public static void main(String[] args) {
         System.out.println(Short.MIN_VALUE);
         System.out.println(Short.MAX_VALUE);

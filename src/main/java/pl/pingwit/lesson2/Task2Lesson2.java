@@ -1,6 +1,6 @@
-package pl.pingwit.Lesson_2;
+package pl.pingwit.lesson2;
 
-public class Task2_lesson2 {
+public class Task2Lesson2 {
     public static void main(String[] args) {
         String myString1 = "77";
         Byte myParsedByte = Byte.parseByte(myString1);
