@@ -22,5 +22,6 @@ public class Task1_lesson2 {
         System.out.println(Double.MIN_VALUE);
         System.out.println(Double.MAX_VALUE);
 
+
     }
 }
