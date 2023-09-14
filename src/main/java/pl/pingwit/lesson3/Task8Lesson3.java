@@ -1,6 +1,6 @@
 package pl.pingwit.lesson3;
 
-public class Task8Lesson3 {
+public class gitTask8Lesson3 {
     public static void main(String[] args) {
         int result1 = 0;
         int result2 = 0;
@@ -20,7 +20,7 @@ public class Task8Lesson3 {
         int totalSum = result1 + result2;
         System.out.println(sumOdd);
         System.out.println(sumEven);
-        System.out.println(totalSum);
+        System.out.println(totalSum)
     }
 
 }
