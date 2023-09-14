@@ -13,7 +13,6 @@ public class Task8Lesson3 {
             } else {
                 result2 = result2 + i;
             }
-            ;
         }
         sumEven += result1;
         sumOdd += result2;
@@ -21,6 +20,23 @@ public class Task8Lesson3 {
         System.out.println(sumOdd);
         System.out.println(sumEven);
         System.out.println(totalSum);
+
+        // если есть возможность воспользоваться меньшим количеством переменных - старайся пользоваться ей
+        /*int sumOdd = 0;
+        int sumEven = 0;
+
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 == 0) {
+                sumOdd = sumOdd + i;
+            } else {
+                sumEven = sumEven + i;
+            }
+        }
+
+        int totalSum = sumEven + sumOdd;
+        System.out.println(sumOdd);
+        System.out.println(sumEven);
+        System.out.println(totalSum);*/
     }
 
 }
