@@ -7,7 +7,7 @@ public class Task6Lesson3 {
             result = result + 2;
             System.out.println(result);
         }
-
+// убери плиз пустую строку (вместе с моим комментом)
     }
-
+// убери плиз пустую строку (вместе с моим комментом)
 }
