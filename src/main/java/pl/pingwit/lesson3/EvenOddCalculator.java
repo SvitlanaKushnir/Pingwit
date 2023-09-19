@@ -10,7 +10,6 @@ public class EvenOddCalculator {
                 sumOdd = sumOdd + i;
             } else {
                 sumEven = sumEven + i;
-                ;  // лишняя ; в этой строке
             }
         }
         int totalSum = sumEven + sumOdd;
@@ -18,5 +17,4 @@ public class EvenOddCalculator {
         System.out.println(sumEven);
         System.out.println(totalSum);
     }
-// убери плиз пустую строку (вместе с моим комментом)
 }

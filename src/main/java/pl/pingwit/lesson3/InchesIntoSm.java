@@ -6,12 +6,9 @@ public class InchesIntoSm {
         double result = 0;
         for (int i = 1; i <= 20; i++) {
             result += inch;
-            // здесь бы хотелось видеть пояснения, сколько дюймов и сколько см
-            System.out.println( i + " inch = " + result + " sm");
+            System.out.println(i + " inch = " + result + " sm");
         }
-// убери плиз пустую строку (вместе с моим комментом)
     }
-// убери плиз пустую строку (вместе с моим комментом)
 }
 
 
