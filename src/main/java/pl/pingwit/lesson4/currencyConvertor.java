@@ -3,7 +3,7 @@ package pl.pingwit.lesson4;
 import java.util.Objects;
 import java.util.Scanner;
 
-public class CurrencyConverter {
+public class currencyConvertor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your preferred currency");
