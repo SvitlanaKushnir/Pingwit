@@ -3,6 +3,8 @@ package pl.pingwit.lesson4;
 import java.util.Objects;
 import java.util.Scanner;
 
+// сделай плиз вторую версию этой программы, в которой для вычислений и хранения результатов будет использоваться не double,
+// а BigDecimal
 public class carInsurance {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -21,12 +23,12 @@ public class carInsurance {
             price1 = engineCapacity * 0.25;
         }
 
-        double price2 = 0;
+        double price2 = 0; // переменную price2 вводить необязательно - можно хранить все в одной переменной
 
         if (Objects.equals(insurancePolicy, "yes")) {
             price2 = price1 * 0.8;
         } else {
-            price2 = price1;
+            price2 = price1;  // этот else можно было бы не делать
         }
         System.out.println("The" + " price " + " is " + price2 + " euro");
     }

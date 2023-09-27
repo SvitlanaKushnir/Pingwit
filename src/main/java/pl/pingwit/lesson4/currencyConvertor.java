@@ -3,6 +3,8 @@ package pl.pingwit.lesson4;
 import java.util.Objects;
 import java.util.Scanner;
 
+// сделай плиз вторую версию этой программы, в которой для вычислений и хранения результатов будет использоваться не double,
+// а BigDecimal
 public class currencyConvertor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

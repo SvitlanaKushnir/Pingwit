@@ -11,7 +11,8 @@ public class road {
         int time = scanner.nextInt();
 
         long startTime = System.currentTimeMillis();
-        long finishTime = startTime + time;
+        long finishTime = startTime + time; // здесь мы используем вермя в миллисекундах, поэтому нужно перевести секунды в миллисекунды
+        // уможить time на 1000
 
         while (System.currentTimeMillis() < finishTime) {
             for (int i = 0; i < 10; i++) {

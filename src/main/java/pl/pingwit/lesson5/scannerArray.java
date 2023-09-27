@@ -16,10 +16,11 @@ public class scannerArray {
         System.out.println("Please enter the third number");
 
         int thirdNumber = scanner.nextInt();
-        int myArray[] = {firstNumber, secondNumber, thirdNumber};
+        int myArray[] = {firstNumber, secondNumber, thirdNumber};// int[] myArray используй плиз джава-стиль объявления массива
 
-        OptionalInt maxValue = Arrays.stream(myArray).max();
-        OptionalInt minValue = Arrays.stream(myArray).min();
+        OptionalInt maxValue = Arrays.stream(myArray).max(); //мы пока не знакомы с Arrays.stream(myArray), поэтому попробуй плиз написать поиск максимального элемента с помощью цикла
+        // у Вадима видел решение с помощью цикла, можно глянуть
+        OptionalInt minValue = Arrays.stream(myArray).min(); // аналогично
 
         System.out.println("Min number is " + minValue);
         System.out.println("Max number is " + maxValue);
