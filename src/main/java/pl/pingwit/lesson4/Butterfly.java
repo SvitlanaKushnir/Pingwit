@@ -2,7 +2,7 @@ package pl.pingwit.lesson4;
 
 import java.util.Scanner;
 
-public class butterfly { //касается всех классов в ДЗ 4 и 5 - классы нужно именовать с большой буквы
+public class Butterfly { //касается всех классов в ДЗ 4 и 5 - классы нужно именовать с большой буквы
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the size of the butterfly");

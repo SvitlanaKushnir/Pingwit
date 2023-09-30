@@ -2,7 +2,7 @@ package pl.pingwit.lesson4;
 
 import java.util.Scanner;
 
-public class road {
+public class Road {
     private static final String ROAD_PART = "||  |  ||";
 
     public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class road {
         int time = scanner.nextInt();
 
         long startTime = System.currentTimeMillis();
-        long finishTime = startTime + time; // здесь мы используем вермя в миллисекундах, поэтому нужно перевести секунды в миллисекунды
+        long finishTime = startTime + time * 1000L; // здесь мы используем вермя в миллисекундах, поэтому нужно перевести секунды в миллисекунды
         // уможить time на 1000
 
         while (System.currentTimeMillis() < finishTime) {

@@ -1,11 +1,11 @@
 package pl.pingwit.lesson4;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Objects;
 import java.util.Scanner;
 
-// сделай плиз вторую версию этой программы, в которой для вычислений и хранения результатов будет использоваться не double,
-// а BigDecimal
-public class currencyConvertor {
+public class CurrencyConvertorBigDecimal {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter your preferred currency");
@@ -20,16 +20,15 @@ public class currencyConvertor {
             return;
         }
 
-        double enteredAmount = scanner.nextDouble();
-        double convertedAmount = 0;
-        double currencyEur = 39.25;
+        BigDecimal enteredAmount = new BigDecimal(scanner.next());
+        BigDecimal currencyEur = BigDecimal.valueOf(39.25);
+        BigDecimal convertedAmount1 = new BigDecimal(enteredAmount.multiply(currencyEur).toString());
+        BigDecimal convertedAmount2 = new BigDecimal(enteredAmount.divide(currencyEur, RoundingMode.HALF_EVEN).toString());
 
         if (Objects.equals(currency, "eur")) {
-            convertedAmount = enteredAmount * currencyEur;
-            System.out.println(enteredAmount + " Euro " + " = " + convertedAmount + " Hryvnia");
+            System.out.println(enteredAmount + " Euro " + " = " + convertedAmount1 + " Hryvnia");
         } else {
-            convertedAmount = enteredAmount / currencyEur;
-            System.out.println(enteredAmount + " Hryvnia " + " = " + convertedAmount + " Euro");
+            System.out.println(enteredAmount + " Hryvnia " + " = " + convertedAmount2 + " Euro");
         }
     }
 }
