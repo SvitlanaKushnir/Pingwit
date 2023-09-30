@@ -21,13 +21,15 @@ public class CurrencyConvertorBigDecimal {
         }
 
         BigDecimal enteredAmount = new BigDecimal(scanner.next());
-        BigDecimal currencyEur = BigDecimal.valueOf(39.25);
-        BigDecimal convertedAmount1 = new BigDecimal(enteredAmount.multiply(currencyEur).toString());
-        BigDecimal convertedAmount2 = new BigDecimal(enteredAmount.divide(currencyEur, RoundingMode.HALF_EVEN).toString());
+        BigDecimal currencyEur = BigDecimal.valueOf(39.25);  // предлагаю вынести константу
 
         if (Objects.equals(currency, "eur")) {
+            // вычисления хочется разместить внутри if else
+            BigDecimal convertedAmount1 = new BigDecimal(enteredAmount.multiply(currencyEur).toString()); // правильнее будет сделать так: enteredAmount.multiply(currencyEur)
             System.out.println(enteredAmount + " Euro " + " = " + convertedAmount1 + " Hryvnia");
         } else {
+            // вычисления хочется разместить внутри if else
+            BigDecimal convertedAmount2 = new BigDecimal(enteredAmount.divide(currencyEur, RoundingMode.HALF_EVEN).toString()); // здесь аналогично: enteredAmount.divide(currencyEur, RoundingMode.HALF_EVEN)
             System.out.println(enteredAmount + " Hryvnia " + " = " + convertedAmount2 + " Euro");
         }
     }

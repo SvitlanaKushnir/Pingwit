@@ -21,7 +21,7 @@ public class CurrencyConvertor {
         }
 
         double enteredAmount = scanner.nextDouble();
-        double convertedAmount = 0;
+        double convertedAmount; // достаточно просто объявить переменную, инициализировать необязательно
         double currencyEur = 39.25;
 
         if (Objects.equals(currency, "eur")) {

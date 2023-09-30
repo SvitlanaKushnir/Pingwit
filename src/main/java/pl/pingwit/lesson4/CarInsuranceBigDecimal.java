@@ -15,7 +15,7 @@ public class CarInsuranceBigDecimal {
         System.out.println("Do you have an insurance policy?");
         String insurancePolicy = scanner.next();
 
-        BigDecimal price = BigDecimal.valueOf(0);
+        BigDecimal price = BigDecimal.valueOf(0); // здесь лучше использовать BigDecimal.ZERO, либо вообще не инициализировать
         BigDecimal accidents = BigDecimal.valueOf(1.2);
         BigDecimal noAccidents = BigDecimal.valueOf(0.25);
         BigDecimal customer = BigDecimal.valueOf(0.8);
@@ -23,7 +23,7 @@ public class CarInsuranceBigDecimal {
         if (Objects.equals(carAccident, "yes")) {
              price = new BigDecimal(engineCapacity.multiply(accidents).multiply(noAccidents).setScale(2, RoundingMode.CEILING).toString());
         } else {
-             price = new BigDecimal(engineCapacity.multiply(noAccidents).setScale(2, RoundingMode.CEILING).toString());
+             price = new BigDecimal(engineCapacity.multiply(noAccidents).setScale(2, RoundingMode.CEILING).toString());  // сделала округление - отлично!
         }
 
         if (Objects.equals(insurancePolicy, "yes")) {

@@ -8,7 +8,7 @@ public class OddToZeroArray {
         for (int i = 0; i < myArray.length; i++) {
             // здесь я бы хотел, чтобы ты ЗАМЕНИЛА в исходном массиве нечетные элементы нулями. а потом распечатали результат после цикла
             if (i % 2 == 0) {
-            myArray[i] = 0;
+                myArray[i] = 0;
             }
         }
         System.out.println(Arrays.toString(myArray));
