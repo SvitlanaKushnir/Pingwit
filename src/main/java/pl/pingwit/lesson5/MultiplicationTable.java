@@ -1,6 +1,6 @@
 package pl.pingwit.lesson5;
 
-public class multiplicationTable {
+public class MultiplicationTable {
     public static void main(String[] args) {
         // красивое решение!
         int[][] myTwoArrays = {{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}};
