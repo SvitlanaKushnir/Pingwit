@@ -6,6 +6,7 @@ public class Owner {
     private String phoneNumber;
     private String email;
 
+    // по заданию, в этом классе нужны конструкторы и toString(), добавь плиз
     public String getName() {
         return name;
     }
@@ -36,15 +37,15 @@ public class Owner {
 
     public void setEmail(String email) {
         this.email = email;
+    }
 
-        @Override
-        public String toString () {
-            return "Owner{" +
-                    "name='" + name + '\'' +
-                    ", surname='" + surname + '\'' +
-                    ", phoneNumber='" + phoneNumber + '\'' +
-                    ", email='" + email + '\'' +
-                    '}';
-        }
+    @Override
+    public String toString () {
+        return "Owner{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

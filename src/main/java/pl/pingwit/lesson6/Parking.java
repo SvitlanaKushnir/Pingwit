@@ -55,7 +55,7 @@ public class Parking {
 
         Car[] cars = {car1, car2, car3, car4, car5};
         for (Car car : cars) {
-            System.out.println(car);
+            System.out.println(car);  // в данный момент в консоль выводятся записи вида pl.pingwit.lesson6.Car@7a81197d, а нужно, чтобы выводилась информация о машине. это нужно исправить, переопредеделив метод toString() в классе Car
         }
     }
 }
