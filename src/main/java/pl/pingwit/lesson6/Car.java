@@ -1,6 +1,7 @@
 package pl.pingwit.lesson6;
 
 public class Car {
+
     private String carNumber;
     private Owner owner;
 
@@ -16,7 +17,15 @@ public class Car {
         return owner;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carNumber='" + carNumber + '\'' +
+                ", owner=" + owner +
+                '}';
+    }
     public void setOwner(Owner owner) {
         this.owner = owner;
+
     }
 }

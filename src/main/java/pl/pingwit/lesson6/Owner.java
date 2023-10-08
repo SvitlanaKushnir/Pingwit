@@ -34,17 +34,17 @@ public class Owner {
         return email;
     }
 
+    @Override
+    public String toString() {
+        return "Owner{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
+
     public void setEmail(String email) {
         this.email = email;
-
-        @Override
-        public String toString () {
-            return "Owner{" +
-                    "name='" + name + '\'' +
-                    ", surname='" + surname + '\'' +
-                    ", phoneNumber='" + phoneNumber + '\'' +
-                    ", email='" + email + '\'' +
-                    '}';
-        }
     }
 }
