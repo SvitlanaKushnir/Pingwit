@@ -34,6 +34,10 @@ public class Owner {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
         return "Owner{" +
@@ -43,8 +47,5 @@ public class Owner {
                 ", email='" + email + '\'' +
                 '}';
     }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
+    // по заданию, в этом классе нужны конструкторы и toString(), добавь плиз
 }

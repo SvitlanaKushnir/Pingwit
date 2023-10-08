@@ -1,31 +1,31 @@
 package pl.pingwit.lesson6;
 
 public class Car {
-
-    private String carNumber;
+    private String number;  // это поле уже находится внутри класса Car, поэтому достаточно было бы number
     private Owner owner;
 
-    public String getCarNumber() {
-        return carNumber;
+    public String getNumber() {
+        return number;
     }
 
-    public void setCarNumber(String carNumber) {
-        this.carNumber = carNumber;
+    public void setNumber(String number) {
+        this.number = number;
     }
 
     public Owner getOwner() {
         return owner;
     }
 
+    public void setOwner(Owner owner) {
+        this.owner = owner;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
-                "carNumber='" + carNumber + '\'' +
+                "number='" + number + '\'' +
                 ", owner=" + owner +
                 '}';
     }
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-
-    }
+    // по заданию, в этом классе нужны конструкторы и toString(), добавь плиз
 }
