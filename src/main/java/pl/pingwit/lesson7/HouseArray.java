@@ -16,12 +16,13 @@ public class HouseArray {
 
         int totalResidentAmount = printResidentsAmount(houses);
         int totalAmountOfIndividualHouses = printinTotalAmountOfIndividualHouses(houses);
-        turnOnCentralHeating (houses);
+        turnOnCentralHeating(houses);
         System.out.println("Total amount of residents are " + totalResidentAmount);
         System.out.println("Total amount of individuals houses are " + totalAmountOfIndividualHouses);
     }
 
-    private static int printResidentsAmount(House[] houses) {
+    private static int printResidentsAmount(House[] houses) {  // этот метод не печатает, а только вычисляет количесвто жителей.
+        // ему подошло бы другое имя
         int totalResidentAmount = 0;
         for (House house : houses) {
             if (house.getFloorAmount() > 1) {
@@ -31,10 +32,11 @@ public class HouseArray {
         return totalResidentAmount;
     }
 
-    private static int printinTotalAmountOfIndividualHouses(House[] houses) {
+    private static int printinTotalAmountOfIndividualHouses(House[] houses) { // этот метод не печатает, а только вычисляет
+        // количество жителей. ему подошло бы другое имя
         int totalAmountOfIndividualHouses = 0;
         for (House house : houses) {
-            if (house.getFloorAmount() > 1) {
+            if (house.getFloorAmount() > 1) { // кажется, что условие должно быть другим: у индивидуальных домов этажей == 1
                 totalAmountOfIndividualHouses += 1;
             }
         }

@@ -4,7 +4,8 @@ public class House {
     private String type;
     private int floorAmount;
     private int residentAmount;
-    private boolean centralHeating;
+    private boolean centralHeating;  // название поля не в полной мере отражает его содержание.
+    // можно интерпретировать как "центральное ли отопление в доме?". больше подошло бы isHeatingOn или подобное
 
     public House(String type, int floorAmount, int residentAmount, boolean centralHeating) {
         this.type = type;

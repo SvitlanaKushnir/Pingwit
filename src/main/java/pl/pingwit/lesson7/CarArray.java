@@ -7,7 +7,7 @@ public class CarArray {
 
         Car[] cars = {car1, car2};
         for (Car car : cars) {
-            if (car.getBrand().equals("Audi")) {
+            if (car.getBrand().equals("Audi")) {  // car.getBrand() может вернуть null, и мы получим NullPointerException. в таких ситуациях рекомендуют поменять порядок "Audi".equals(car.getBrand())
                 System.out.println(car);
                 for (int i = 1; i <= car.getDoorAmount(); i++) {
                     System.out.println("The door number " + i + " is opened");
