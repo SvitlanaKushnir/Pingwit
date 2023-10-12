@@ -14,14 +14,14 @@ public class HouseArray {
         House[] houses = {house1, house2, house3, house4, house5};
         System.out.println(Arrays.toString(houses));
 
-        int totalResidentAmount = printResidentsAmount(houses);
-        int totalAmountOfIndividualHouses = printinTotalAmountOfIndividualHouses(houses);
+        int totalResidentAmount = countResidentsAmount(houses);
+        int totalAmountOfIndividualHouses = countTotalAmountOfIndividualHouses(houses);
         turnOnCentralHeating(houses);
         System.out.println("Total amount of residents are " + totalResidentAmount);
         System.out.println("Total amount of individuals houses are " + totalAmountOfIndividualHouses);
     }
 
-    private static int printResidentsAmount(House[] houses) {  // этот метод не печатает, а только вычисляет количесвто жителей.
+    private static int countResidentsAmount(House[] houses) {  // этот метод не печатает, а только вычисляет количесвто жителей.
         // ему подошло бы другое имя
         int totalResidentAmount = 0;
         for (House house : houses) {
@@ -32,11 +32,11 @@ public class HouseArray {
         return totalResidentAmount;
     }
 
-    private static int printinTotalAmountOfIndividualHouses(House[] houses) { // этот метод не печатает, а только вычисляет
+    private static int countTotalAmountOfIndividualHouses(House[] houses) { // этот метод не печатает, а только вычисляет
         // количество жителей. ему подошло бы другое имя
         int totalAmountOfIndividualHouses = 0;
         for (House house : houses) {
-            if (house.getFloorAmount() > 1) { // кажется, что условие должно быть другим: у индивидуальных домов этажей == 1
+            if (house.getFloorAmount() == 1) { // кажется, что условие должно быть другим: у индивидуальных домов этажей == 1
                 totalAmountOfIndividualHouses += 1;
             }
         }
@@ -45,8 +45,8 @@ public class HouseArray {
 
     private static void turnOnCentralHeating(House[] houses) {
         for (House house : houses) {
-            if (house.getFloorAmount() > 5 && !house.isCentralHeating()) {
-                house.setCentralHeating(true);
+            if (house.getFloorAmount() > 5 && !house.isHeatingOn()) {
+                house.setHeatingOn(true);
                 System.out.println(house);
             }
         }

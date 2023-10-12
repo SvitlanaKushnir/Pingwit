@@ -4,14 +4,15 @@ public class House {
     private String type;
     private int floorAmount;
     private int residentAmount;
-    private boolean centralHeating;  // название поля не в полной мере отражает его содержание.
+    private boolean isHeatingOn;  // название поля не в полной мере отражает его содержание.
     // можно интерпретировать как "центральное ли отопление в доме?". больше подошло бы isHeatingOn или подобное
 
-    public House(String type, int floorAmount, int residentAmount, boolean centralHeating) {
+
+    public House(String type, int floorAmount, int residentAmount, boolean isHeatingOn) {
         this.type = type;
         this.floorAmount = floorAmount;
         this.residentAmount = residentAmount;
-        this.centralHeating = centralHeating;
+        this.isHeatingOn = isHeatingOn;
     }
 
     public String getType() {
@@ -38,12 +39,12 @@ public class House {
         this.residentAmount = residentAmount;
     }
 
-    public boolean isCentralHeating() {
-        return centralHeating;
+    public boolean isHeatingOn() {
+        return isHeatingOn;
     }
 
-    public void setCentralHeating(boolean centralHeating) {
-        this.centralHeating = centralHeating;
+    public void setHeatingOn(boolean heatingOn) {
+        isHeatingOn = heatingOn;
     }
 
     @Override
@@ -52,7 +53,7 @@ public class House {
                 "type='" + type + '\'' +
                 ", floorAmount=" + floorAmount +
                 ", residentAmount=" + residentAmount +
-                ", centralHeating=" + centralHeating +
+                ", isHeatingOn=" + isHeatingOn +
                 '}';
     }
 }
