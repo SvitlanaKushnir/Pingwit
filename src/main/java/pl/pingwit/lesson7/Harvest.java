@@ -34,7 +34,6 @@ public class Harvest {
     public String getPlant() {
         return plant;
     }
-
     public void setPlant(String plant) {
         this.plant = plant;
     }
