@@ -8,7 +8,7 @@ public class PalindromMain {
         System.out.println("Please, enter any word");
         String word = scanner.nextLine();
 
-        StringUtilsPalindrome palindrom = new StringUtilsPalindrome();
+        StringUtilsPalindromeChecker palindrom = new StringUtilsPalindromeChecker();
         boolean checkPalindrom = palindrom.checkPalindrom(word);
 
         System.out.println(checkPalindrom);

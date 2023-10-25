@@ -2,7 +2,7 @@ package pl.pingwit.lesson10.task2;
 
 import java.util.Arrays;
 
-public class PalindromArray {
+public class PalindromArrayChecker {
     /*
     классы PalindromArray и StringUtilsPalindrome делаю по сути то же самое (checkPalindrome()) , но разными способами.
     имена у них должны быть подобными: ...PalindromeChecker, например ArrayPalindromeChecker и StringUtilsPalindromeChecker
