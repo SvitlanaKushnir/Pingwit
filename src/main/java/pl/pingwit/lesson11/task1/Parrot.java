@@ -1,6 +1,6 @@
 package pl.pingwit.lesson11.task1;
 
-public class Parrot extends PetData{
+public class Parrot extends PetData {
     private final String color;
     private final Double wingsLength;
     private final Boolean talk; // в этом поле хранится информация о том, говорящий ли попугай. ему бы больше подошло имя 'isTalking'

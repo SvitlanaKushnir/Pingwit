@@ -1,9 +1,9 @@
 package pl.pingwit.lesson11.task1;
 
-public class Hamster extends PetData{
+public class Hamster extends PetData {
     private final String color;
     private final Double weight;
-    private final Double  cheekVolume;
+    private final Double cheekVolume;
 
     public Hamster(Long id, String name, Owner owner, String color, Double weight, Double cheekVolume) {
         super(id, name, owner);

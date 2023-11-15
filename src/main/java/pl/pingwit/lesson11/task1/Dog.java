@@ -1,6 +1,6 @@
 package pl.pingwit.lesson11.task1;
 
-public class Dog extends PetData{
+public class Dog extends PetData {
     private final String breed;
     private final Double weight;
     private final Double tailLength;

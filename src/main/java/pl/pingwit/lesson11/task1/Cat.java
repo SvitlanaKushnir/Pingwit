@@ -1,11 +1,11 @@
 package pl.pingwit.lesson11.task1;
 
-public class Cat extends PetData{
+public class Cat extends PetData {
     private final String breed;
     private final Double weight;
     private final Double tailLength;
 
-    public Cat(Long id, String name, Owner owner,String breed, Double weight, Double tailLength) {
+    public Cat(Long id, String name, Owner owner, String breed, Double weight, Double tailLength) {
         super(id, name, owner);
         this.breed = breed;
         this.weight = weight;
