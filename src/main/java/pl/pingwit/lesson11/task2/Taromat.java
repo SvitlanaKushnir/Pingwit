@@ -8,9 +8,10 @@ public class Taromat {
     private static final BigDecimal ALUMINIUM_PRICE = new BigDecimal("0.15");
 
     public Receipt calculator(Tare[] tares) {
-        BigDecimal plasticCost;
-        BigDecimal glassCost;
-        BigDecimal aluminiumCost;
+        // Эти переменные лучше объявить там, где они используются, в строке 32
+        //BigDecimal plasticCost;
+        //BigDecimal glassCost;
+        //BigDecimal aluminiumCost;
 
         int plasticQuantity = 0;
         int glassQuantity = 0;
@@ -28,9 +29,9 @@ public class Taromat {
             }
         }
 
-        plasticCost = (PLASTIC_PRICE.multiply(BigDecimal.valueOf(plasticQuantity)));
-        glassCost = (Glass_PRICE.multiply(BigDecimal.valueOf(glassQuantity)));
-        aluminiumCost = (ALUMINIUM_PRICE.multiply(BigDecimal.valueOf(aluminiumQuantity)));
+        BigDecimal plasticCost = (PLASTIC_PRICE.multiply(BigDecimal.valueOf(plasticQuantity)));
+        BigDecimal glassCost = (Glass_PRICE.multiply(BigDecimal.valueOf(glassQuantity)));
+        BigDecimal aluminiumCost = (ALUMINIUM_PRICE.multiply(BigDecimal.valueOf(aluminiumQuantity)));
 
         BigDecimal totalAmount = plasticCost.add(glassCost).add(aluminiumCost);
 
