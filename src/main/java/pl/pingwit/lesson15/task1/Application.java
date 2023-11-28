@@ -1,4 +1,4 @@
-package pl.pingwit.lesson15;
+package pl.pingwit.lesson15.task1;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
