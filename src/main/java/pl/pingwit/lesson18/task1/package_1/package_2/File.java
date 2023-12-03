@@ -1,4 +1,4 @@
-package pl.pingwit.lesson19.task1.package_1.package_2;
+package pl.pingwit.lesson18.task1.package_1.package_2;
 
 import java.io.Serializable;
 

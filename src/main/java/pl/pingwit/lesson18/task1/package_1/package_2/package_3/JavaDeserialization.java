@@ -1,6 +1,6 @@
-package pl.pingwit.lesson19.task1.package_1.package_2.package_3;
+package pl.pingwit.lesson18.task1.package_1.package_2.package_3;
 
-import pl.pingwit.lesson19.task1.package_1.package_2.File;
+import pl.pingwit.lesson18.task1.package_1.package_2.File;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -17,7 +17,7 @@ public class JavaDeserialization {
 
         if (Objects.equals(fileName, "example")) {
 
-            String filePath = "src/main/java/pl/pingwit/lesson19/task1/package_1/package_2/example.txt";
+            String filePath = "src/main/java/pl/pingwit/lesson18/task1/package_1/package_2/example.txt";
 
             try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(filePath))) {
                 File file = (File) ois.readObject();
