@@ -55,6 +55,7 @@ public class Application {
         System.out.println(parsedDateFormatter13);
 
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy.mm.dd, ms.ss.mm.hh");
+        // dateTimeFormatter нигде не используется - нужно ли его создавать?
         LocalDateTime time = LocalDateTime.now();
         System.out.println(time);
     }

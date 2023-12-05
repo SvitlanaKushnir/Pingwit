@@ -10,7 +10,7 @@ public class PersonParser {
         String[] personStrings = text.split(";");
         Person[] persons = new Person[personStrings.length];
         for (int i = 0; i < personStrings.length; i++) {
-            persons[i] = parsePerson(personStrings[i]);
+            persons[i] = parsePerson(personStrings[i]); // выделила private методы - оч хорошо
         }
         return persons;
     }

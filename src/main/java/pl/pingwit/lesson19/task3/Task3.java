@@ -31,7 +31,8 @@ public class Task3 {
                 System.out.println(obj);
             }
 
-        } catch (IOException | NullPointerException e) {
+        } catch (IOException | NullPointerException e) { // NPE не нужно ловить, нужно писать код, который не бросает NPE,
+            // поэтому плиз доработай метод parseJsonResponse
             throw new MyException("Sorry, this city doesn't have any atm");
         }
     }

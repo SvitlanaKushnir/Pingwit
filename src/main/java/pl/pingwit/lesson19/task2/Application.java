@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 
+// код нужно отформатировать
 public class Application {
     public static void main(String[] args) throws IOException {
         ObjectMapper objectMapper=new ObjectMapper();

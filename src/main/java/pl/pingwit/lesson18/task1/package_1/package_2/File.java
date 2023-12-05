@@ -2,7 +2,8 @@ package pl.pingwit.lesson18.task1.package_1.package_2;
 
 import java.io.Serializable;
 
-public class File implements Serializable {
+public class File implements Serializable { // в Джаве существует класс File, в котором есть ряд методов для работы с файловой
+    // системой, поэтому создавать собственный было не нужно.
     private String name;
 
     public File() {
