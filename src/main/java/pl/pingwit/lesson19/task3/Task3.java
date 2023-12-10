@@ -1,6 +1,7 @@
 package pl.pingwit.lesson19.task3;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.lang3.StringUtils;
 import pl.pingwit.lesson12.task5.MyException;
 import pl.pingwit.lesson19.task2.ATM;
 
@@ -31,7 +32,8 @@ public class Task3 {
                 System.out.println(obj);
             }
 
-        } catch (IOException | NullPointerException e) { // NPE не нужно ловить, нужно писать код, который не бросает NPE,
+        } catch (IOException |
+                 NullPointerException e) { // NPE не нужно ловить, нужно писать код, который не бросает NPE,
             // поэтому плиз доработай метод parseJsonResponse
             throw new MyException("Sorry, this city doesn't have any atm");
         }
@@ -61,7 +63,10 @@ public class Task3 {
 
     private static ATM[] parseJsonResponse(String jsonResponse) throws IOException {
         // допишите метод
-        ObjectMapper objectMapper = new ObjectMapper();
-        return objectMapper.readValue(jsonResponse, ATM[].class);
+        if (StringUtils.isNotBlank(jsonResponse) && !jsonResponse.equals("null")) {
+            ObjectMapper objectMapper = new ObjectMapper();
+            return objectMapper.readValue(jsonResponse, ATM[].class);
+        }
+        return new ATM[]{};
     }
 }
